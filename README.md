@@ -9,7 +9,11 @@ FIVEM SIMPLE HUD SCRIPT
 - [**Discord**](https://discord.gg/EkwWvFS)
 - [**Tebex**](https://eyestore.tebex.io/)
 
-![image](https://user-images.githubusercontent.com/53000629/190902802-29768f18-a256-4adb-af53-2926fcb3c99a.png)
+![vehiclehud](https://user-images.githubusercontent.com/53000629/194928654-daccfda4-0279-48b7-9e68-c698efef640f.png)
+
+![notvehicle](https://user-images.githubusercontent.com/53000629/194928658-bdaed1ff-11a4-484a-acb3-c33443e55276.png)
+
+
 
 https://www.youtube.com/watch?v=3hMbaI7pKLY
 
