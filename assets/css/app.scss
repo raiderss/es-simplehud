@@ -1,0 +1,257 @@
+
+
+
+@mixin loading($animation, $bar: 0) {
+  transition: $animation;
+  stroke-dasharray:$bar;
+}
+
+@mixin background($url, $size, $repeat, $position) {
+  background-image: url($url);
+  background-size: $size;
+  background-repeat: $repeat;
+  background-position: $position;
+}
+
+@mixin circle {
+  stroke: black;
+  stroke-opacity: 0.1;
+  stroke-width: 5;
+}
+
+body {
+  overflow: hidden;
+  user-select: none;
+}
+
+
+#app{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  // @include background('../img/background.svg', cover, no-repeat, center center);
+}
+
+.hud{
+  position: absolute;
+  float: left;
+  transform: scale(.8);
+  top: 63rem;
+  left: 2.9rem;
+  > health {
+    > icon {
+      transform: scale(.9);
+      position: absolute;
+      width: 1.063rem;
+      height: 1.063rem;
+      top: 1.2rem;
+      left: 1.95rem;
+      @include background('../img/health.svg', cover, no-repeat, center center);
+    }
+    > svg {
+      width: 5rem;
+      height: 3.3rem;
+      > circle {
+        @include circle;
+      }
+      > path {
+        stroke: #B81161;
+        stroke-width: 0.313rem;
+        stroke-linecap: round;
+        @include loading(.47s all, 120 1200);
+      }
+    }
+  }
+  > armor {
+    position: absolute;
+    left: 4rem;
+    > icon {
+      position: absolute;
+      width: 1rem;
+      height: 1.2rem;
+      top: 1.1rem;
+      left: 2rem;
+      transform: scale(.85);
+      @include background('../img/armory.svg', cover, no-repeat, center center);
+    }
+    > svg {
+      width: 5rem;
+      height: 3.3rem;
+      > circle {
+        @include circle;
+      }
+      > path {
+        stroke: #1300EE;
+        stroke-width: 0.313rem;
+        stroke-linecap: round;
+        @include loading(.47s all, 120 1200);
+      }
+    }
+  }
+  > water {
+    position: absolute;
+    left: 8rem;
+    > icon {
+      position: absolute;
+      width: 1.438rem;
+      height: 1.625rem;
+      top: 0.99rem;
+      left: 1.75rem;
+      transform: scale(.85);
+      @include background('../img/water.svg', cover, no-repeat, center center);
+    }
+    > svg {
+      width: 5rem;
+      height: 3.3rem;
+      > circle {
+        @include circle;
+      }
+      > path {
+        stroke: #11B826;
+        stroke-width: 0.313rem;
+        stroke-linecap: round;
+        @include loading(.47s all, 120 1200);
+      }
+    }
+  }
+  > hunger {
+    position: absolute;
+    left: 12.5rem;
+    > icon {
+      position: absolute;
+      width: 1rem;
+      height: 1.2rem;
+      top: 1.04rem;
+      left: 1.95rem;
+      transform: scale(0.85);
+      @include background('../img/hunger.svg', cover, no-repeat, center center);
+    }
+    > svg {
+      width: 5rem;
+      height: 3.3rem;
+      > circle {
+        @include circle;
+      }
+      > path {
+        stroke: #FF7A00;
+        stroke-width: 0.313rem;
+        stroke-linecap: round;
+        @include loading(.47s all, 120 1200);
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+html {
+  font-size: 16.0px;
+}
+
+@media screen and (width: 4096px) and (height: 2160px) {
+  html {
+    font-size: 31px;
+  }
+}
+
+@media screen and (width: 2560px) and (height: 1440px) {
+  html {
+    font-size: 17px;
+  }
+}
+
+@media screen and (width: 1920px) and (height: 1200px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media screen and (width: 1920px) and (height: 1200px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media screen and (width: 1920px) and (height: 1440px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media screen and (width: 1600px) and (height: 1024px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (width: 1440px) and (height: 900px) {
+  html {
+    font-size: 13.3px;
+  }
+}
+
+@media screen and (width: 1680px) and (height: 1050px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media screen and (width: 1600px) and (height: 900px) {
+  html {
+    font-size: 13.3px;
+  }
+}
+
+@media screen and (width: 1600px) and (height: 1024px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media screen and (width: 1768px) and (height: 992px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media screen and (width: 1366px) and (height: 768px) {
+  html {
+    font-size: 11.3px;
+  }
+}
+@media screen and (width: 1400px) and (height: 1050px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media screen and (width: 1280px) and (height: 1024px) {
+  html {
+    font-size: 11.7px;
+  }
+}
+@media screen and (width: 1280px) and (height: 720px) {
+  html {
+    font-size: 11px;
+  }
+}
+@media screen and (width: 1024px) and (height: 768px) {
+  html {
+    font-size: 10.05px;
+  }
+}
+@media screen and (width: 832px) and (height: 624px) {
+  html {
+    font-size: 8.05px;
+  }
+}
+
+@media screen and (width: 800px) and (height: 600px) {
+  html {
+    font-size: 8px;
+  }
+}

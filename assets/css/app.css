@@ -1,0 +1,242 @@
+body {
+  overflow: hidden;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#app {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.hud {
+  position: absolute;
+  float: left;
+  transform: scale(0.8);
+  top: 63rem;
+  left: 2.9rem;
+}
+.hud > health > icon {
+  transform: scale(0.9);
+  position: absolute;
+  width: 1.063rem;
+  height: 1.063rem;
+  top: 1.2rem;
+  left: 1.95rem;
+  background-image: url("../img/health.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.hud > health > svg {
+  width: 5rem;
+  height: 3.3rem;
+}
+.hud > health > svg > circle {
+  stroke: black;
+  stroke-opacity: 0.1;
+  stroke-width: 5;
+}
+.hud > health > svg > path {
+  stroke: #B81161;
+  stroke-width: 0.313rem;
+  stroke-linecap: round;
+  transition: 0.47s all;
+  stroke-dasharray: 120 1200;
+}
+.hud > armor {
+  position: absolute;
+  left: 4rem;
+}
+.hud > armor > icon {
+  position: absolute;
+  width: 1rem;
+  height: 1.2rem;
+  top: 1.1rem;
+  left: 2rem;
+  transform: scale(0.85);
+  background-image: url("../img/armory.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.hud > armor > svg {
+  width: 5rem;
+  height: 3.3rem;
+}
+.hud > armor > svg > circle {
+  stroke: black;
+  stroke-opacity: 0.1;
+  stroke-width: 5;
+}
+.hud > armor > svg > path {
+  stroke: #1300EE;
+  stroke-width: 0.313rem;
+  stroke-linecap: round;
+  transition: 0.47s all;
+  stroke-dasharray: 120 1200;
+}
+.hud > water {
+  position: absolute;
+  left: 8rem;
+}
+.hud > water > icon {
+  position: absolute;
+  width: 1.438rem;
+  height: 1.625rem;
+  top: 0.99rem;
+  left: 1.75rem;
+  transform: scale(0.85);
+  background-image: url("../img/water.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.hud > water > svg {
+  width: 5rem;
+  height: 3.3rem;
+}
+.hud > water > svg > circle {
+  stroke: black;
+  stroke-opacity: 0.1;
+  stroke-width: 5;
+}
+.hud > water > svg > path {
+  stroke: #11B826;
+  stroke-width: 0.313rem;
+  stroke-linecap: round;
+  transition: 0.47s all;
+  stroke-dasharray: 120 1200;
+}
+.hud > hunger {
+  position: absolute;
+  left: 12.5rem;
+}
+.hud > hunger > icon {
+  position: absolute;
+  width: 1rem;
+  height: 1.2rem;
+  top: 1.04rem;
+  left: 1.95rem;
+  transform: scale(0.85);
+  background-image: url("../img/hunger.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.hud > hunger > svg {
+  width: 5rem;
+  height: 3.3rem;
+}
+.hud > hunger > svg > circle {
+  stroke: black;
+  stroke-opacity: 0.1;
+  stroke-width: 5;
+}
+.hud > hunger > svg > path {
+  stroke: #FF7A00;
+  stroke-width: 0.313rem;
+  stroke-linecap: round;
+  transition: 0.47s all;
+  stroke-dasharray: 120 1200;
+}
+
+html {
+  font-size: 16px;
+}
+
+@media screen and (width: 4096px) and (height: 2160px) {
+  html {
+    font-size: 31px;
+  }
+}
+@media screen and (width: 2560px) and (height: 1440px) {
+  html {
+    font-size: 17px;
+  }
+}
+@media screen and (width: 1920px) and (height: 1200px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media screen and (width: 1920px) and (height: 1200px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media screen and (width: 1920px) and (height: 1440px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media screen and (width: 1600px) and (height: 1024px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (width: 1440px) and (height: 900px) {
+  html {
+    font-size: 13.3px;
+  }
+}
+@media screen and (width: 1680px) and (height: 1050px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media screen and (width: 1600px) and (height: 900px) {
+  html {
+    font-size: 13.3px;
+  }
+}
+@media screen and (width: 1600px) and (height: 1024px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media screen and (width: 1768px) and (height: 992px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media screen and (width: 1366px) and (height: 768px) {
+  html {
+    font-size: 11.3px;
+  }
+}
+@media screen and (width: 1400px) and (height: 1050px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media screen and (width: 1280px) and (height: 1024px) {
+  html {
+    font-size: 11.7px;
+  }
+}
+@media screen and (width: 1280px) and (height: 720px) {
+  html {
+    font-size: 11px;
+  }
+}
+@media screen and (width: 1024px) and (height: 768px) {
+  html {
+    font-size: 10.05px;
+  }
+}
+@media screen and (width: 832px) and (height: 624px) {
+  html {
+    font-size: 8.05px;
+  }
+}
+@media screen and (width: 800px) and (height: 600px) {
+  html {
+    font-size: 8px;
+  }
+}/*# sourceMappingURL=app.css.map */
